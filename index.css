@@ -1,0 +1,418 @@
+@font-face {
+    font-family: 'Kumbh_Sans';
+    src: url(fonts/Kumbh_Sans/static/KumbhSans-Light.ttf);
+}
+@font-face{
+    src:url(fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+    font-family: 'Open_Sans';
+}
+
+*{
+   margin: 0px;
+   padding: 0px;
+   user-select: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open_Sans' ;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: rgba(196, 186, 200, 0.2);
+    line-height: 30px;
+}
+
+.nav {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    position: fixed;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding-right: 40px;
+    padding: 40px 0px 40px 0px;
+}
+
+.nav-links li {
+    padding-left: 30px;
+    margin-right: 50px;
+}
+
+.nav-links li a {
+    font-family: 'Kumbh_Sans';
+    color: #592B96;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    
+}
+
+.nav-links li a:hover {
+    color: #B48BEB;
+}
+
+#logo img {
+   max-width: 340px;
+   height: auto;
+   overflow:hidden;
+   padding: 50px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:925px;
+    width: 100%;
+    padding-top: 100px;
+    background-color: rgb(218, 198, 255,38%);
+}
+
+.header h1 {
+    color: #351F52;
+    font-size: 50px;
+    line-height: 1.2;
+margin-right: 10%;
+font-family: 'Kumbh_Sans';
+font-weight: 900;
+}
+
+#cris{
+    color:  #592B96;
+    font-size: 58px;
+}
+
+.header img{
+    display: flex;
+    width: 30%;
+    height: 85%;
+    padding-left: 40px;
+}
+
+.sect-1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:60px 0 0 0;
+}
+
+.sect-1 p{
+    color: #351F52;
+}
+
+.sect-1-p1{
+    width: 60%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.sect-1-p2, .sect-1-p3{
+    width: 60%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: start;
+}
+
+#sect-1-p1-title, #sect-1-p2-title, #sect-1-p3-title{
+    font-family: 'Open_sans';
+    font-style: normal;
+    color: #592B96;
+    line-height: 1px;
+    font-size: 42px ;
+    overflow-x: visible;
+    letter-spacing: 1px;
+    
+}
+
+#sect-1-p1-text {
+    line-height: 30px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+#sect-1-p2-text {
+    line-height: 33px;
+    text-align: justify;
+}
+
+#sect-1-p3-text {
+    align-self: baseline;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    margin: auto;
+    justify-content: center;
+    gap: 45px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+   
+  
+    
+    
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+.card img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover; 
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 16px;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h2 {
+    color: #592B96;
+    font-size: larger;
+    margin: 8px 0;
+}
+
+.card p {
+    color: #351F52;
+    margin: 8px 0 0 0; 
+
+}
+
+ .last-sect{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+ }
+
+#last-one{
+    width: 45%;
+}
+
+#last-one h3{
+    color:#592B96;
+}
+
+#last-one p{
+    color:#351F52;
+}
+
+footer{
+    padding: 30px;
+    background-color:rgb(218, 198, 255,38%) ;
+}
+
+   .copyright{
+        display: flex;
+        flex-direction: row;
+      justify-content: center;
+    }
+
+
+
+
+
+
+
+
+
+
+    .menu-icon {
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+    #menu-toggle {
+        display: none;
+    }
+    
+    .nav-links {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .nav-links li {
+        display: inline;
+        margin-left: 20px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    @media (max-width: 1300px) {
+        .menu-icon {
+            display: block;
+            padding: 35px;
+        }
+    
+        .nav-links {
+            display: none;
+            text-align: right;
+            width: 100%;
+            background-color: #ffffff;
+            position: absolute;
+            top: 100px; 
+            left: 0;
+            z-index: 1;
+        }
+    
+        #menu-toggle:checked + .menu-icon + .nav-links {
+            display: block;
+        }
+        .header{
+            height: 725px;
+        }
+    
+        .nav-links li {
+            display: block;
+            margin: 10px 35px;
+        }
+        .sect-1 {
+            padding: 20px 0;
+        }
+    
+        .sect-1-p1 {
+            width: 90%;
+            height: auto;
+            
+        }
+    
+    
+    
+        #sect-1-p1-text {
+            font-size: 18;
+            line-height: 28px;
+         
+        }
+       
+    
+        #sect-1-p1-title {
+            font-size: 28px;
+           
+        }
+    
+        .header{
+            display: flex;
+            flex-direction: column;
+            padding-top: 80px;
+    
+        }
+        .header h1{
+            
+            font-size: 45px;
+            margin: 70px auto 30px;
+            text-align: center;
+      
+        }
+        .header img{
+          width: 55%;
+          height: 55%;
+          margin-top: 20px; 
+          justify-content: center;
+        }
+        #cris{
+            font-size: 60px;
+            
+        }
+
+        .card img {
+            width: 100%;
+            height: 500px;  
+            margin-bottom: 20px;
+        }
+     .card h2{
+        font-size: 18px;
+     }
+    
+     .card p{
+        font-size: 16px;
+     }
+
+    
+     #last-one{
+    
+      margin: auto;
+    }
+    
+    #last-one h3{
+        font-size: 18;
+    }
+    
+    #last-one p{
+        font-size: 14;
+    }
+    .container {
+         display: flex;
+         flex-direction: column;
+            padding: 50px;
+            width: 90%;
+        }
+    }
+    
+        
+    
+    @media (max-width: 768px) {
+       
+        .header h1{
+            
+            font-size: 30px;
+            margin: 80px auto 5px;
+      
+        }
+        .header img{
+          width: 50%;
+          height: 45%;
+          margin-top: 50px; 
+          justify-content: center;
+        }
+
+
+    #sect-1-p1-text{
+    text-align: left;
+                    }
+
+        #last-one{
+            width: 60%;
+                }
+
+                .card{
+                    width: 90%;
+                }
+    
+    }
+       
